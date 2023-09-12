@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --primary: #ff0051;
+    -second: #3a3a3a;
+    --third: #f2f2f2
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.nav {
+    height: 170px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: transparent;
+    z-index: 9;
+    transition: all 0.6s ease;
+}
+.nav:hover{
+    background-color: rgba(255, 255, 255, 0.489);
+}
+.nav-left a {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-bottom: none;
+}
+span{
+    color: black;
+}
+.nav-center a {
+    font-size: 15px;
+    margin-right: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* border-bottom: 2px solid transparent; */
+    transition: all 0.7s ease;
+}
+.nav a:hover,
+.nav a i:hover {
+    color: var(--primary);
+    /* border-bottom: 2px solid black; */
+}
+.menu-list {
+    border-bottom: 2px solid transparent;
+    transition: all 0.7s ease;
+}
+.menu-list:hover {
+    border-bottom: 2px solid black;
+}
+.nav-right a {
+    font-size: 1.6em;
+    margin-right: 15px;
+}
+.nav-right a i:hover {
+    color: var(--primary);
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    animation: animate 12s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+        background-image: url(imgs/ldkiya.jpg);
+       
+    }
+    50%{
+        opacity: 1;
+        background-image: url(imgs/ldke.jpg);
+    }
+}
+#shop {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 3px solid wheat;
+    transition: all 0.7s ease;
+}
+#shop:hover {
+    background-color: rgba(255, 217, 0, 0.533);
+    border: none;
+    color: white;
+}
+#shop:active {
+    background-color: rgba(255, 217, 0, 0.824);
+    border: 2px solid orange;
+    color: white;
+}
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+#search-box {
+    display: none;
+    border-radius: 19px;
+    text-align: start;
+    border: .4px solid rgba(0, 0, 0, 0.626);
+    color: black;
+    padding: 10px 30px;
+    transition: all 0.4s ease;
+}
+#search-icon {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+.content-1 {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 22%;
+}
+.sticky {
+    background-color: white; 
+    padding: 10px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+}
+.header-page2 {
+    width: 100%;
+    position: absolute;
+    top: 34%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category {
+    width: 100%;
+    height: 600px;
+    /* background-color: red; */
+    position: absolute;
+    top: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category .elem {
+    width: 550px;
+    height: 550px;
+    /* background-color: white; */
+    border-radius: 10px;
+    /* position: relative; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.img-cont {
+    width: 80%;
+    height: 80%;
+    /* background-color: red; */
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    transition: all 3s ease;
+}
+.img-cont:hover {
+    scale: 1.1;
+}
+.img-cont img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.page3 {
+    width: 100vw;
+    height: 150vh;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.header-page3 {
+    width: 100%;
+    top: 41%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.header-page3 h2{
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+.category-2 {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    /* background-color: blue; */
+    top: 47%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.elem-2 {
+    width: 480px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+    /* position: relative; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.page4 {
+    width: 100%;
+    height: 80vh;
+    background-image: url(http://getwallpapers.com/wallpaper/full/c/2/d/633460.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-4{
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.page5 {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    position: relative;
+    flex-direction: column;
+}
+
+.elem-5 {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+}
+.elem-5 h1 {
+    font-size: 5vw;
+    font-weight: 300;
+    mix-blend-mode: difference;
+}
+.elem-5 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-position: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all linear 0.17s;
+    z-index: -3;
+}
